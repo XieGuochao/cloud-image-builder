@@ -12,12 +12,6 @@ if test $disk = ""; then
     echo $help; exit
 fi
 
-# echo "#cloud-config
-# users:
-#   - name: root
-#     password: $(mkpasswd --method=SHA-512 --rounds=4096)
-#     lock_passwd: false" > tmp-user-data
-
 read -p "Password: " password
 echo "#cloud-config 
 password: $password 
