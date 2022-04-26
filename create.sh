@@ -16,7 +16,7 @@ fi
 
 ./download.sh ${version}
 
-cp "img/${version}-server-cloudimg-amd64-disk-kvm.img" ${name}
+cp "img/${version}-server-cloudimg-amd64.img" ${name}
 qemu-img resize ${name} ${size}
 
 echo "create image done."

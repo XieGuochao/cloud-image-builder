@@ -9,7 +9,7 @@ if test $version = "-h"; then
     echo $help; exit
 fi
 
-disk="${version}-server-cloudimg-amd64-disk-kvm.img"
+disk="${version}-server-cloudimg-amd64.img"
 root="${version}-server-cloudimg-amd64-root.tar.xz"
 
 if test -f "img/$disk"; then
